@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(to right, #a99d9a, #cfbfb2);
+}
+h1,
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 45px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1{
+  text-shadow: #333 2px 2px;
+  color:#e63946;
+}
+h2{
+  color:#513c2a
+}
+a {
+  display: block;/*hace que los enlaces sean más facil de hacer click*/
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  color: #333;
+  transition:color 0.3s ease-in-out;
+}
+a:hover{
+  color: #e63946; /* Se vuelve rojo al pasar el mouse */
+  text-decoration: underline;
+}
+.subtex {
+  font-size: 25px;
+}
+.container {
+  display: flex;
+  align-items: center; /*centra verticalmente*/
+  justify-content: center; /*centra horizontalmente*/
+  min-height: 100vh; /** permite crecer segun el contenido */
+  padding:20px;
+  max-width:1200px;/*evita que el contenido se vea demasiado extendido en pantallas grande*/
+  margin:auto;
+
+}
+img {
+  width: 80%;
+  height: auto; /*para que se mantenga la proporcion original*/
+  padding: 20px;
+  display: block;
+  margin: auto;
+  box-shadow:#333 5px 5px 5px ;
+
+
+}
+p,
+ul,
+ol {
+  width: 90%;/*se adapta mejor a pantallas pequeñas*/
+  max-width: 900px; /*evita  que las lineas sean demasiado largas*/
+  line-height: 1.6; /*espaciado*/
+  margin: auto; /*centra el contenido*/
+  padding: 10px;
+}
+em {
+  font-weight: 400;
+}
+ #especial, span {
+  font-family: cursive;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+ }
+ol li::marker{/*aplica negrita solo a item de la lista en este caso los  numeros*/
+  font-weight:bold;/*items en negrita*/
+}
+  
+

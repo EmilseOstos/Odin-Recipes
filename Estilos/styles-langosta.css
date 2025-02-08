@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: bisque;
+}
+h1,
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 45px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1{
+  color:rgb(169, 85, 39);
+}
+h2{
+  color:#ca7631
+}
+a {
+  display: block;/*hace que los enlaces sean más facil de hacer click*/
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  color:rgb(153, 79, 79);
+  transition:color 0.3s ease-in-out;
+}
+a:hover{
+  color: #2d4e19; /* Se vuelve rojo al pasar el mouse */
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.subtex {
+  font-size: 25px;
+}
+.container {
+  display: flex;
+  align-items: center; /*centra verticalmente*/
+  justify-content: center; /*centra horizontalmente*/
+  min-height: 100vh; /** permite crecer segun el contenido */
+  padding:20px;
+  max-width:1200px;/*evita que el contenido se vea demasiado extendido en pantallas grande*/
+  margin:auto;
+}
+img {
+  width: 80%;
+  height: auto; /*para que se mantenga la proporcion original*/
+  padding: 20px;
+  display: block;
+  margin: auto;
+}
+p,
+ul,
+ol {
+  width: 90%;/*se adapta mejor a pantallas pequeñas*/
+  max-width: 900px; /*evita  que las lineas sean demasiado largas*/
+  line-height: 1.6; /*espaciado*/
+  margin: auto; /*centra el contenido*/
+  padding: 10px;
+}
+em {
+  font-weight: 400;
+}
+ ol li::marker{/*aplica negrita solo a item de la lista en este caso los  numeros*/
+  font-weight:bold;/*items en negrita*/
+}
+  
+
